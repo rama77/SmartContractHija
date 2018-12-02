@@ -5,10 +5,10 @@ contract SmartContractHija {
 	address owner;
     address hija;
     address mama;
-    uint fondos;
+    uint fondos; //Puede ser reemplazado por el balance del contrato
     mapping (address => uint) pendingWithdrawals;
 	
-    
+
 	constructor (address walletHija, address walletMama) public payable {
 		owner = msg.sender;
         hija = walletHija;
