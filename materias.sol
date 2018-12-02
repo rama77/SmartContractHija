@@ -8,6 +8,7 @@ contract SmartContractHija {
     uint fondos;
     mapping (address => uint) pendingWithdrawals;
 	
+    
 	constructor (address walletHija, address walletMama) public payable {
 		owner = msg.sender;
         hija = walletHija;
